@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|neon|outline">
+
+    <style>
+        div.menu>ul{
+            margin: 30px;
+            padding: 20px;
+            list-style: none;
+        }
+        div.menu>ul>li{
+            width: 120px;
+            height: 40px;
+            border: 2px solid #20b2aa;
+            margin-bottom: 10px;
+            text-align: center;
+            padding-top: 10px;
+            background: #ffe4c4;
+            float: left ;
+            margin-right: 10px;
+            font-family: 'Nanum Pen Script';
+        }
+        div.menu>ul>li:hover{
+            color: yellow;
+            background: #2e8b57;
+            cursor:  pointer;  /* 커서 모양 변경 */
+        }
+        /* 동시에 여러 태그에 적용되게 하려면 */
+        div.a.div.b.div.c{
+            font-size: 2em;
+        }
+        div.a,div.b{
+		font-family: 'Rancho';
+	    }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>로그인</li>
+            <li>회원가입</li>
+            <li>방명록</li>
+            <li>Q&A 게시판</li>
+            <li>오시는길</li>
+        </ul>
+    </div>
+    <hr style="clear: both;"> <!-- float 속성 해제 -->
+    <div class="a font-effect-shadow-multiple">Have a Nice day!!</div>
+    <div class="b font-effect-neon">Have a Nice day!!!</div>
+    <div class="c font-effect-outline">Have a Nice day!!!</div> 
+</body>
+</html>

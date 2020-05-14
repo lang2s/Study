@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 공백: 하위태그 >: 바로 아래의 하위태그 */
+        div>div>b{
+            color: red; /*첫번째 b 태그에만 적용됨 */
+        }
+        div b{
+            font-size: 1.3em; /*  두개의 b 태그에 모두 적용  */
+        }
+        /* body 아래의 모든 태그 */
+        body{
+            text-decoration: line-through; /* 취소선 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <b>div div b tag 입니다</b>
+        </div>
+    </div>
+    <div>
+        <b>div b tag</b>
+    </div>
+    <div id="container">
+        <span>div id가 container 아래의 span</span>
+    </div>
+</body>
+</html>

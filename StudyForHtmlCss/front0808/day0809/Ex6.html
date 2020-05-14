@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody tr:hover{
+            background: black;
+            color: white;
+        }
+        #tb2 table{
+            border: 3px solid gray;
+            width: 300px;
+        }
+        #tb2 table th{
+            border: 1px solid green;
+            background: pink;
+            color: blue;
+            font-size: 1.1em;
+        }
+        #tb2 table td{
+            border: 1px dotted gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table>
+        <caption>제목</caption>
+        <thead>
+            <tr>
+                <th>제목</th>  th 는 가운데정렬과 굵기 속성이 추가되어있다
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  행
+                <td>열</td>  열
+            </tr>
+        </tbody>
+    </table> 
+
+        colspan=”3”  : 3개의 열을 합치는 기능
+        rowspan=”3”  : 3개의 행을 합치는 기능
+
+-->
+    <table border="1" style="width: 300px;">
+        <caption>표1</caption>
+        <thead>
+            <tr height="50" bgcolor="orange">
+                <th>이름</th>
+                <th width="150">핸드폰</th>
+                <th bgcolor="yellow">주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="right">홍길동</td>
+                <td align="center" bgcolor="#7fffd4">010-222-3333</td>
+                <td>seoul</td>
+            </tr>
+            <tr align="center"><!-- 행전체에 적용됨-->
+                <td>강호동</td>
+                <td>011-111-1111</td>
+                <td>busan</td>
+            </tr>
+            <tr>
+                <td>강호동</td>
+                <td>011-1111-1111</td>
+                <td>busan</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div id="tb2">
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>강호동</td>
+                <td>12세</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>이영자</td>
+                <td>25세</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>유재석</td>
+                <td>31세</td>
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+</html>

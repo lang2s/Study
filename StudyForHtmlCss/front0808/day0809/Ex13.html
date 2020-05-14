@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid gray;
+        }
+        tr{
+            height: 40px;
+        }
+        td,th{
+            border: 1px solid gray;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <caption><b>폼태그 연습</b></caption>
+            <tr>
+                <th width="100">email</th>
+                <td width="400">
+                    <input type="email" id="email" required="required"><!-- required 필수입력요함 -->
+                </td>
+            </tr>
+            <tr>
+               <th width="100">checkbox</th> <!-- cheackbox나 radio는 name이 같아야 같은그룹으로 인식-->
+               <td>
+                   <input type="checkbox" name="hobby" value="게임">게임
+                   &nbsp;
+                   <input type="checkbox" name="hobby" value="낚시">낚시
+                   &nbsp;
+                   <input type="checkbox" name="hobby" value="영화감상">영화감상
+                   &nbsp;
+                   <input type="checkbox" name="hobby" value="음악감상">음악감상
+                   &nbsp;
+               </td>
+            </tr>
+            <tr>
+                <th width="100">radio</th>
+                <td><b>나이가 어떻게 되나요?</b><br>
+                    <input type="radio" name="age" value="10">10대
+                    &nbsp;
+                    <input type="radio" name="age" value="20">20대
+                    &nbsp;
+                    <input type="radio" name="age" value="30">30대
+                    &nbsp;
+                    <input type="radio" name="age" value="40">40대
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="서버로 전송">
+                </td>
+            </tr>
+            <tr>
+                <th>button</th>
+                <td>
+                    <input type="button" value="버튼1" id="btn1">
+                    <button type="button" id="btn2">버튼2</button>
+                    <!-- submit 과 동일하다-->
+                    <input type="image" src="../Image/고양이키우기.jpg" id="btn3">
+                </td>
+            </tr>
+            <tr>
+                <th>select</th>
+                <td>
+                    <select id="sel1">
+                        <option value="apple">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="mango">mango</option>
+                    </select>
+                    <select id="sel2" size="5">
+                        <option value="apple">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="mango">mango</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

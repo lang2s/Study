@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tb1 table{
+            width: 400px;
+            border: 3px solid gray;
+        }
+        #tb1 table th,#tb1 table td{
+            border: 1px solid gray;
+            font-size: 0.9em;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tb1">
+        <table>
+            <caption><b>연습1</b></caption>
+            <tr>
+                <td colspan="2">2열합침</td>
+                <td>1칸</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2행 합침</td>
+                <td colspan="2">2열 합침</td>
+            </tr>
+            <tr>
+                <td>1칸</td>
+                <td>1칸</td>
+            </tr>
+            <tr>
+                <td colspan="2">2열합침</td>
+                <td>1칸</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
