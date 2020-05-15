@@ -1,0 +1,38 @@
+/* Cascading style Sheet */
+/* 선택자(selector)  */
+
+#header-center {
+    margin: 0 auto;
+    width: 1080px;
+}
+#header-search h1{
+    width: 280px;
+    display: inline-block;
+    height: 80px;
+    background-image: url("../NAVER_Page/Image/goover.jpg");
+    background-position: -4px -9px ;
+    background-repeat: no-repeat;
+    text-indent: -100%;
+    overflow: hidden;
+}
+#header-search a{
+    text-decoration: none;
+}
+/* header-center h1 {
+    자손 선택자
+} */
+#header-search h2 {
+    display: none;
+}
+#header-search fieldset {
+    margin-left: 20px;
+    /* padding-left: 10px;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-bottom: 12px; */
+    padding: 12px 0 12px 10px;
+    width: 510px;
+    height: 49px;
+    display: inline-block;
+    border: 2px solid #03cf5d;
+}
