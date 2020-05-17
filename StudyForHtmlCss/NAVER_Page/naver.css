@@ -5,10 +5,20 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
 
 .blind {
     position: absolute;
@@ -19,9 +29,33 @@ body {
     height: 1px;
 }
 
+.relative {
+    position: relative;
+}
+
 .center-align {
     margin: 0 auto;
     width: 1080px;
+}
+
+header {
+    height: 170px;
+}
+
+#header-top {
+    float: right;
+    margin-top: 8px;
+}
+
+#header-top span{
+    color: #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
+}
+#header-search {
+    clear: both;
+    padding-top: 45px;
 }
 
 #header-search a{
@@ -29,35 +63,36 @@ body {
 }
 
 #header-search h1{
-    width: 280px;
+    width: 222px;
     display: inline-block;
-    height: 80px;
+    height: 70px;
     background-image: url("../NAVER_Page/Image/goover.jpg");
-    background-position: 17px -9px ;
+    background-position: -40px 20px ;
     background-repeat: no-repeat;
     text-indent: -100%;
     overflow: hidden;
     vertical-align: middle;
     position: relative;
-    top: -6px;
+    top: -5px;
+    left: 1px;
 }
 
-/* header-center h1 {
-    자손 선택자
-} */
+ header-center h1 span{
+    display: none;
+} 
 
 #header-search h2 {
     display: none;
 }
 
 #header-search fieldset {
-    margin-left: 20px;
+    margin-left: 18px;
     /* padding-left: 10px;
     padding-top: 12px;
     padding-right: 0;
     padding-bottom: 12px; */
     padding: 12px 0 12px 10px;
-    width: 510px;
+    width: 521px;
     height: 49px;
     display: inline-block;
     border: 2px solid #03cf5d;  /* hex */
@@ -69,7 +104,7 @@ body {
     border: none;
     outline: none;
     vertical-align: top;
-    width: 405px;
+    width: 395px;
     height: 23px;
     padding: 0;
 }
@@ -86,6 +121,10 @@ body {
 
 }
 
+#search-keyboard {
+    background-image: url("(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg");
+}
+
 #search-img {
     background: #03cf5d;
     background-image: url("../NAVER_Page/sp_search.png");
@@ -97,10 +136,16 @@ body {
     margin: 14px;
 }
 
+nav {
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+}
+
 nav ul{
     margin: 0;
-    padding: 0;
+    padding: 16px 0 0 4px;
     list-style: none;
+    display: inline-block;
 }
 nav li {
     display: inline-block;
@@ -110,7 +155,7 @@ nav li span:first-child {
     height: 16px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-image: url("../NAVER_Page/sp_nav.png");
+    background-image: url("../NAVER_Page/Image/sp_nav.png");
     margin-left: 14px;
 }
 
@@ -190,3 +235,16 @@ nav li:nth-child(15) span:first-child {
     background-position: -233px -232px;
 }
 
+.nav-divider {
+    display: inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3; 
+}
+
+#search-ranking {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
