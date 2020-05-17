@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cnt1 = 0; // 전역변수
+        window.onload = function(){
+            var out = document.getElementById("out");
+           
+            document.getElementById("btn1").onclick = function(){
+                cnt1++; // 1증가
+                out.innerHTML += "cnt1="+cnt1+"<br>" 
+            }
+
+            document.getElementById("btn2").onclick = function(){
+                cnt2 = 0; // var 선언없으면 전역변수 등록
+                cnt2++; // 1증가
+                out.innerHTML += "cnt2="+cnt2+"<br>";
+            }
+
+            document.getElementById("btn3").onclick = function(){
+                var cnt3 = 0; // 현재 함수에서만 사용가능항 지역변수가됨
+                cnt3++; // 1증가
+                out.innerHTML +="cnt3="+cnt3+"<br>";
+                out.innerHTML +="cnt2="+cnt2+"<br>";
+            }
+        }
+ 
+    </script>
+</head>
+<body>
+    <input type="button" id="btn1" value="cnt1 증가">
+    <input type="button" id="btn2" value="ctn2 증가">
+    <input type="button" id="btn3" value="ctn3 증가">
+
+    <div id="out" style="font-size: 2em;"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="out" style="font-size: 12pt;">
+        Have a Nice Day!!
+    </div>
+    <button id="btn1">점점크게</button>
+    <button id="btn2">점점작게</button>
+    <button id="btn3">빨강색</button>
+    <button id="btn4">분홍색</button>
+    <button id="btn5">파랑색</button>
+
+    <script>
+        var out = document.getElementById("out");
+        var b1 = document.getElementById("btn1");
+        var b2 = document.getElementById("btn2");
+
+        b1.onclick = function(){
+            // 글자크기 style 값 얻기
+            var fs = out.style.fontSize;
+            // alert(fs);
+            var fs2 = parseInt(fs,10) // fs에서 정수 부분만 가져옴
+            // alert(fs2);
+            fs2+=2;
+            out.style.fontSize = fs2+'pt';
+        }
+
+        b2.onclick = function(){
+            // 글자크기 style 값 얻기
+            var fs = out.style.fontSize;
+            // alert(fs);
+            var fs2 = parseInt(fs,10); // fs에서 정수(10진수) 부분만 가져옴
+            // alert(fs2);
+            fs2 -=2;
+            out.style.fontSize=fs2+'pt';
+        }
+        document.getElementById("btn3").onclick = function(){
+            out.style.color = 'red';
+        }
+        document.getElementById("btn4").onclick = function(){
+            out.style.color = 'pink';
+        }
+        document.getElementById("btn5").onclick = function(){
+            out.style.color = 'blue';
+        }
+    </script>
+</body>
+</html>

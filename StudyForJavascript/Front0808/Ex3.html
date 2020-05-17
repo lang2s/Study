@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        이름: <input type="text" id="name" value="강호동">
+        나이: <input type="text" id="age" value="23">
+    <br>
+        <div id="out" style="color: red; font-size: 1.2em;"></div>
+    <br>
+        <button type="button" id="btn1">이름변경</button>
+        <button type="button" id="btn2">나이변경</button>
+        <button type="button" id="btn3">원래대로</button>
+
+    <script>
+        var name1 = document.getElementById("name");
+        var age = document.getElementById("age");
+        var out = document.getElementById("out");
+
+        var b1 = document.getElementById("btn1");
+            b1.onclick = function(){
+                name1.value = "이영자";
+                // innerHTML: html 삽입
+                // innerText: text 삽입
+                // 두 함수의 차이는 html 코드를 넣을수있느냐 없느냐
+                out.innerHTML = "<b>이름이 변경되었습니다</b>"
+            }
+        
+        var b2 = document.getElementById("btn2");
+            b2.onclick = function(){
+                age.value = 34;
+                out.innerText="<b>나이가 변경되었습니다</b>";
+            }
+
+        var b3 = document.getElementById("btn3");
+            b3.onclick = function(){
+                name1.value = "강호동";
+                age.value = 23;
+
+            }
+    </script>
+</body>
+</html>

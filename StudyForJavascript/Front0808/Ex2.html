@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+    //    이벤트 발생시 함수 호출하는 방법
+    //     요소값.on이벤트=function(){
+    //     }
+
+    // 버튼 이벤트 1번
+    var b1 = document.getElementById("btn1");
+
+    // 이벤트
+    b1.onclick = function(){
+        alert("버튼 1번을 클릭했어요!!!");
+    }
+
+
+    </script>
+</head>
+<body>
+    <button type="button" id="btn1">
+        버튼1
+    </button>
+    <button type="button" id="btn2">
+        버튼2
+    </button>
+
+    <script>
+        //body 안에서 이벤트를 줄 경우에는 버튼보다는 아래에 써야한다
+
+        var b2 = document.getElementById("btn2");
+        
+            b2.onclick = function(){
+                alert("버튼2번을 클릭했어요!!!")
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var b1 = document.getElementById("btn1");
+            var b2 = document.getElementById("btn2");
+            var b3 = document.getElementById("btn3");
+            var myimg = document.getElementById("myimg");
+
+            // setAttribute("속성","값"): 속성 변경
+            // getAttribute("속성"): 속성값 얻기
+
+            b1.onclick = function(){
+                myimg.setAttribute("src","../Front0808/Image/개냥이.jpg");
+            }
+            b2.onclick = function(){
+                myimg.setAttribute("src","../Front0808/Image/개냥이2.jpg")
+            }
+            b3.onclick = function(){
+                myimg.setAttribute("src","../Front0808/Image/고양이키우기.jpg")
+            }
+
+            document.getElementById("btn4").onclick=function(){
+                var w = myimg.getAttribute("width");
+                console.log(w); // 크롬 콘솔에 출력
+                // 10픽셀 크게 하기
+                // w += 10; +=: w = w+10 과 같다, 
+                // 문제점: 문자열로 인식한경우 30010이 된다
+                // 숫자형태의 문자열을 정수타입으로 변환햐주는 함수
+                // parseInt("300"): 문자 300을 숫자 300으로 변경
+                var w2 = parseInt(w)+10;
+                myimg.setAttribute("width",w2);
+            }
+
+            document.getElementById("btn5").onclick = function(){
+                var w = myimg.getAttribute("width");
+                var w2 = parseInt(w)-10;
+                myimg.setAttribute("width",w2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="../Front0808/Image/고양이키우기.jpg" id="myimg" width="300">
+    <button id="btn1">고양이1</button>
+    <button id="btn2">고양이2</button>
+    <button id="btn3">원래대로</button>
+    <button id="btn4" style="background: orange;">점점크게</button>
+    <button id="btn5" style="background: green;">점점작게</button>
+</html>
