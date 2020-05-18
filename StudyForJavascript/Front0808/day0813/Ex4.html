@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>문자열 함수 공부하기</h3>
+    Have a Nice Day!!! <br>
+    <script>
+        var s = "Have a Nice Day!!!";
+        var m = "length:"+s.length+"<br>"; // 길이구하는 함수
+
+        m +="7 번 인덱스에 해당하는 문자는? "+s.charAt(7)+"<br>";
+        m +="D 의 인덱스 번호는? "+s.indexOf('D')+"<br>"
+        m +="Nice 추출: "+s.substring(7,11)+"<br>";
+        m +="Nice 부터 모두 추출: "+s.substring(7)+"<br>";
+        document.write(m);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>isNaN: 입력값이 문자열이 섞여있으면 true, 숫자면 false</h2>
+
+    숫자1 입력: <input type="text" id="su1" size="5"><br>
+    숫자2 입력: <input type="text" id="su2" size="5"><br>
+    <input type="button" id="btn" value="두수 더하기">
+    <div id="out"></div>
+    <script>
+        var su1 = document.getElementById("su1");
+        var su2 = document.getElementById("su2");
+        var out = document.getElementById("out");
+        document.getElementById("btn").onclick = function(){
+            // 문자인경우 함수종료(return)
+            // su1.value 가 문자인경우 true
+            if(isNaN(su1.value)==true){
+                alert("첫번째 숫자가 잘못 입력되었어요!!");
+                out.innerHTML = "숫자1 입력값 잘못됨!!";
+                return false; // 함수 비정상 종료
+            }
+
+            if(isNaN(su2.value)==true){
+                alert("두번째 숫자가 잘못 입력되었어요!!");
+                out.innerHTML = "숫자2 입력값 잘못됨!!";
+                return false; // 함수 비정상 종료
+            }
+            // var sum = eval(su1.value)+eval(su2.value);
+            var sum = eval(su1.value+" + "+su2.value); // 위와 결과동일
+            out.innerHTML = su1.value+" + "+su2.value+" = "+sum;
+        }
+    </script>
+</body>
+</html>

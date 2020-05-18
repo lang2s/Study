@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="out1"></div>
+    <div id="out2"></div>
+    <div id="out3"></div>
+    <button type="button" id="btn1">
+        버튼클릭시 out1에 현재날짜를 넣으세요
+    </button>
+    <br>
+    <button type="button" id="btn2">
+        버튼클릭시 out2에 이미지
+    </button>
+    <br>
+    <input type="text" id="msg">
+    <br>
+    <button type="button" id="btn3">
+        버튼 클릭시 out3에 위에서 입력한 값을 넣어주세요
+    </button> 
+    <br>
+    <hr>
+    <div id="out4" style="color: blue; background: orange;
+                        width: 500px; height: 50px;">happy
+    </div>
+    <button type="button" id="btn4">
+        글자색:red, 배경색: yellow 변경
+    </button>
+    <br>
+    <button type="button" id="btn5">
+        글자크기:20pt로 변경
+    </button>
+    <br>
+    <button type="button" id="btn6">
+        너비: 300 높이: 200으로 변경
+    </button>
+
+    <script>
+        var out1 = document.getElementById("out1");
+        var out2 = document.getElementById("out2");
+        var out3 = document.getElementById("out3");
+        var out4 = document.getElementById("out4");
+
+        document.getElementById("btn1").onclick = function(){
+            var s = "오늘날짜 <br>";
+            var day = new Date();
+            
+            s += day.getFullYear()+" - "+(day.getMonth()+1)+" - "+day.getDate();
+            out1.innerHTML = s
+        }
+
+        document.getElementById("btn2").onclick = function(){
+            out2.innerHTML = "<img src='../Front0808/Image/개냥이.jpg'>"
+        }
+
+        document.getElementById("btn3").onclick = function(){
+            var msg = document.getElementById("msg");
+            out3.innerHTML = msg.value;
+        }
+
+        document.getElementById("btn4").onclick = function(){
+            out4.style.color = "red";
+            out4.style.background = "yellow";
+        }
+
+        document.getElementById("btn5").onclick = function(){
+            out4.style.fontSize = "20pt"
+        }
+
+        document.getElementById("btn6").onclick = function(){
+            out4.style.width = "300pt";
+            out4.style.height = "200pt";
+        }
+        
+    </script>
+</body>
+</html>

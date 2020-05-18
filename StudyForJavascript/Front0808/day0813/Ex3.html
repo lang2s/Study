@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    이름: <input type="text" id="irum" size="7"><br>
+    나이: <input type="text" id="age" size="7"><br>
+    <input type="button" id="btn" value="입력값 출력하기">
+    <div id="out" style="font-size: 15pt; color: blue;"></div>
+    <script>
+        // 버튼 누르면 
+        // 이름:xxx
+        // 나이:xxx
+        // 십년후 나이:xxx
+        // 조건: 나이에 문자열이 있으면 alert으로 경고후 함수종료
+        //         십년후 나이는 현재나이 +10 계산후 출력하기(eval사용)
+
+        var irum = document.getElementById("irum");
+        var age = document.getElementById("age");
+        var out = document.getElementById("out");
+
+        document.getElementById("btn").onclick = function(){
+           if(isNaN(age.value)){
+                alert("나이가 잘못 입력되었습니다!!");
+                return false;
+           }
+           var s="[결과]<br>";
+            
+            s += "이름: "+irum.value+"<br>"
+            s += "나이: "+age.value+"<br>"
+            s += "십년후나이: " +eval(age.value+"+"+10)+"<br>";
+            out.innerHTML = s
+           // 입력값 지우기
+           irum.value = "";
+           age.value = "";
+           // 이름에 포커스주기
+           irum.focus();
+        }
+
+    </script>
+</body>
+</html>

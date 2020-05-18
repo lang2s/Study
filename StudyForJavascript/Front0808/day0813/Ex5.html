@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>select</h2>
+    <div id="out" style="color: red; font-size: 2em;">
+        안녕하세요 Have a Good Time!!!
+    </div>
+    <hr>
+    글자색 선택
+    <select id="selcolor" size="1">
+        <option value="red">빨강</option>
+        <option value="blue">파랑색</option>
+        <option value="green">초록색</option>
+        <option value="pink">분홍색</option>
+        <option value="orange">주황색</option>
+    </select>
+    <script>
+        var out=document.getElementById("out");
+
+        // 이벤트
+        var sel = document.getElementById("selcolor");
+        sel.onchange = function(){
+            // 선택한 색상값 얻기
+            var mycolor = sel.value;
+            // alert(mycolor);
+            out.style.color = mycolor;
+        }
+    </script>
+    <hr>
+    <img src="../Image/고양이키우기.jpg" style="max-width: 300px;" id="myimg">
+    <br>
+    <select name="" id="selimg">
+        <option value="개냥이.jpg">개냥이.jpg</option>
+        <option value="개냥이2.jpg">개냥이2.jpg</option>
+        <option value="개냥이3.jpg">개냥이3.jpg</option>
+        <option value="고양이키우기.jpg">고양이키우기.jpg</option>
+    </select>
+
+    <script>
+        var myimg = document.getElementById("myimg");
+        var selimg = document.getElementById("selimg");
+
+        selimg.onchange = function(){
+            myimg.setAttribute("src","../Image/"+selimg.value);
+        }
+    </script>
+</body>
+</html>

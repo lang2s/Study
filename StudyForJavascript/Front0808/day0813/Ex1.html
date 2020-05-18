@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var out = document.getElementById("out");
+            // 버튼1
+            document.getElementById("btn1").onclick = function(){
+                // prompt: 입력상자가 있는 메시지 창을 띄움
+                // var msg = prompt("당신의 이름은 무엇입니까?")
+
+                // 초기값 지정하기
+                var msg = prompt("당신의 이름은 무엇입니까?","이영자");
+                // out에 넣기
+                out.innerHTML = msg;
+            }
+
+            document.getElementById("btn2").onclick=function(){
+                var ans = confirm("[확인]을 누르면 빨강[취소]를 누르면\n파랑으로 글자색을 변경합니다");
+
+                // alert(ans); // true/false
+                // 조건문(관계연산자:>, <, >=, <=, ==(동등연산자),!=)
+                // if(조건){
+                //     참일때 명령
+                // }else{
+                //     거짓일때 명령
+                // }
+                if(ans==true){
+                    out.innerHTML = "<b style='color:red'>확인을 눌렀어요!!</b>";
+                }else{
+                    out.innerHTML = "<b style='color:blue'>취소를 눌렀어요!!</b>";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>자바스크립트 내장함수 공부하기</h3>
+    <button id="btn1">prompt</button>
+    <button id="btn2">confirm</button>
+
+    <hr>
+    <h2>결과 나오는곳</h2>
+    <div id="out"></div>
+    <hr>
+    <h2>eval: 문자열 수식으로 바꿈</h2>
+    <script>
+        var a = "12";
+        var b = "5";
+        document.write(a+b); // 125 나옴 (문자열이므로)
+        document.write("<br>");
+        document.write(eval(a)+eval(b)); // a,b를 수치로 변환후 계산
+        document.write("<br>");
+        document.write(eval("6*8")); // 수식도 계산해줌
+        document.write("<br>");
+
+        var a2 = "3.5";
+        var b2 = "1.7";
+        document.write("<br>");
+        document.write(parseInt(a2)+parseFloat(b2)+"<br>"); // 3+1.7 = 4.7
+        document.write(eval(a2)+eval(b2)+"<br>"); // 3.5+1.7 = 5.2
+        document.write(parseInt(a2)+parseInt(b2)+"<br>"); // 3+1=4
+    </script>
+</body>
+</html>
