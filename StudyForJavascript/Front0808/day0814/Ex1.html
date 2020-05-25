@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>점수를 입력하세요</h3>
+    <input type="text" id="score" size="5">
+    <button type="button" id="btn">평가하기</button>
+    <script>
+        var sc = document.getElementById("score");
+        document.getElementById("btn").onclick = function(){
+            var score = parseInt(sc.value);
+            // 다중 if문으로 '평가' 결과 출력
+            if(score>=90)
+                document.write("<b>참잘했어요</b>");
+            else if(score>=80)
+                document.write("<b>조금 더 노력하세요!!!</b>");
+            else   
+                document.write("<b>재시험!!!</b>");
+        }
+    </script>
+    <hr>
+    <h3>swith문 학습하기</h3>
+    <script type="text/javascript">
+        var n = 2;
+        var s = "";
+
+        switch(n) {
+            case 1:
+                s += "one<br>";
+                break;  //switch문을 빠져나간다. 안쓰면 끝까지 실행됨
+            case 2:
+                s += "two<br>";
+                break;
+            case 3:
+                s += "three<br>";
+                break;
+            default:
+                s += "others<br>";
+                break;
+        }
+        document.write(s);
+    </script>   
+    <hr>
+    <h3>swith에 break가 없는 경우</h3>
+    <script>
+        var a = 3;
+        var s = "";
+
+        switch (a) {
+            case 1:
+                s += "1.apple";
+            case 2:
+                s += "2.orange";
+            case 3:
+                s += "3.banana";
+            default:
+                s += "other fruit";
+                break;
+        }
+        document.write(s);
+    </script>
+</body>
+</html>

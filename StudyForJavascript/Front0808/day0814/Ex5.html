@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array</h3>
+        <script>
+            var arr = new Array(); // 배열생성
+            arr[0] = "다알리아";
+            arr.push("장미꽃");
+            arr.push("안개꽃");
+            arr.push("국화꽃");
+
+            var s = "arr 의 갯수: "+arr.length+"<br>";
+            for(var i=0;i<arr.length;i++){
+                s += "<h3>"+arr[i]+"</h3>";
+            }
+            document.write(s);
+        </script>
+    <hr>
+        <h3>배열을 2차원으로 표현하고 싶다면</h3>
+        <script>
+            var arr2 = new Array();
+            arr2[0] = ["안개꽃",10]; // [0][0],[0][1]
+            arr2[1] = ["장미꽃",23];
+            arr2[2] = ["국화꽃",5];
+            arr2[3] = ["채송화꽃",20];
+
+            var s2 = "arr2의 갯수: "+arr2.length+"<br>";
+            for(var i=0;i<arr2.length;i++){
+                s2 += "<h4>꽃집아가씨!!!"+arr2[i][0]+" "
+                    +arr2[i][1]+"송이만 주세요</h4>"
+            }
+            document.write(s2);
+        </script>
+</body>
+</html>

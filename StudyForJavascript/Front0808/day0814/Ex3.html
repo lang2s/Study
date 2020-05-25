@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>이미지 9개 연속 출력하기</h3>
+    <script>
+        for(var i=1;i<=9;i++){
+            document.write("<img src='../Image/0"+i+".jpg'>");
+        }
+    </script>
+    <hr>
+    <h3>1.jpg~10.jpg 출력(가로방향,너비:100px)</h3>
+    <script>
+        for(var i=1;i<=10;i++){
+            document.write("<img src='../Image"+i+".jpg' width='100>'");
+        }
+    </script>
+    <br>
+    <h3>select문에 1~10까지 나오게 하기</h3>
+    <select>
+        <script>
+            for(var i=1;i<=10;i++){
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+    <br>
+    <h3>select문에 1~31까지 나오게 하기</h3>
+    <select>
+        <script>
+            for(var i=1;i<=31;i++){
+                document.write("<option>"+i+"</option>");
+            }
+        </script>
+    </select>
+    <br>
+    <h3>select문에 1950년부터 현재년도까지 나오게하기</h3>
+    <select>
+        <script>
+            var date = new Date();
+            var y = date.getFullYear();
+            for(var i=1950;i<=y;i++){
+                document.write("<option>"+i+"</option>")
+            }
+        </script>
+    </select>
+</body>
+</html>

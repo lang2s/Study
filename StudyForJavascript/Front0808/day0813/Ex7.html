@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // checkbox,radio : 같은 name  을 지정하면 그룹설정이 되며
+        // 자바스크립트에서 배열타입으로 값을 얻을수 있다
+
+        window.onload = function(){
+            var out = document.getElementById("out");
+            
+            document.getElementById("btn").onclick = function(){
+                // 체크박스는 배열타입이므로 반복문을 사용한다
+                var s = "나의 취미는";
+                for(var i=0;i<frm.hobby.lengh;i++){
+                    if(frm.hobby[i].checked) // ==true 생략됨(체크하면 true)
+                        s += frm.hobby[i].value + "&nbsp;";
+                }
+                s += "입니다<br>"
+                out.innerHTML = s;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <h3>당신의 취미를 모두 선택하세요</h3>
+        <input type="checkbox" value="게임" name="hobby">게임
+        <input type="checkbox" value="여행" name="hobby">여행
+        <input type="checkbox" value="여행" name="hobby">운동
+        <input type="checkbox" value="여행" name="hobby">낚시
+        <br>
+        <h3>글자색을 선택하세요</h3>
+        <input type="radio" name="tcolor" value="black" checked>검정
+        <input type="radio" name="tcolor" value="redk" >빨강
+        <input type="radio" name="tcolor" value="pink" >분홍
+        <input type="radio" name="tcolor" value="orange" >오랜지
+        <br>
+        운전면허:<input type="checkbox" id="lic">있음
+        <br><br>
+        <button id="btn">결과 출력하기</button>
+    </form>
+        <h3>결과값 출력되는곳</h3>
+        <div id="out" style="color: black; font-size: 15pt;">
+            out
+        </div>
+</body>
+</html>

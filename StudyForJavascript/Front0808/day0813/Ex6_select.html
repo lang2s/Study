@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>버튼을 누르면 ex6_move 파일로 이동합니다</h3>
+    <button type="button" id="btn">move 로 이동</button>
+    <script>
+        document.getElementById("btn").onclick = function(){
+            location.href = "Ex6_move.html";
+        }
+    </script>
+    <h3>가고싶은 사이트를 선택하세요</h3>
+    <select id="gourl" style="width: 150px;">
+        <option value="http://www.naver.com">네이버</option>
+        <option value="http://www.google.com">구글</option>
+        <option value="http://www.nate.com">네이트</option>
+        <option value="http://www.daum.net">다음</option>
+    </select>
+    <script>
+        // 선택하면 해당 url로 이동하도록 프로그램을 작성해보세요
+        var gourl=document.getElementById("gourl");
+            gourl.onchange = function(){
+                location.href = gourl.value;
+            }
+    </script>
+</body>
+</html>

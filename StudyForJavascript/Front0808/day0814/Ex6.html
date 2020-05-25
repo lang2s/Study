@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            document.getElementById("btn").onclick = function(){
+                // 체크박스는 배열타입이므로 반복문을 사용한다
+                var s = "나의 취미는";
+                var n = 0;
+                for(var i=0;i<frm.hobby.length;i++){
+                    if(frm.hobby[i].checked){ // ==true 생략됨(체크하면 true)
+                        s += frm.hobby[i].value+"&nbsp;"
+                        n++; // 취미가 체크상태일때마다 1씩 증가
+                    }
+                }
+                s += "입니다<br>";
+                if(n==0){
+                    s = "저는 별다른 취미가 없어요<br>";
+                }
+                // radio
+              
+              /*  for(var i=0;i<frm.tcolor.length;i++){
+                    if(frm.tcolor[i].checked){
+                        s += "글자색: "+frm.tcolor[i].value+"<br>";
+                        // 색상을 out에 적용
+                        out.style.color = frm.tcolor[i].value;
+                    }
+                } */
+
+                // 위의 코드와 같음, radio 는 한개값만 가져오면 되므로
+                s += "글자색: "+frm.tcolor.value+"<br>";
+                    out.style.color = frm.tcolor.value;
+                
+                // 체크박스 한개짜리
+
+                var lic = document.getElementById("lic");
+                s += "checked 상태: "+lic.checked+"<br>";
+                s += "value: "+lic.value+"<br>";
+
+                if(lic.checked)
+                    s += "운전면허가 있어요!!";
+                else
+                    s += "운전면허가 없어요!!";
+
+                out.innerHTML = s;    
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <h3>당신의 취미를 모두 선택하세요</h3>
+        <input type="checkbox" value="게임" name="hobby">게임
+        <input type="checkbox" value="여행" name="hobby">여행
+        <input type="checkbox" value="운동" name="hobby">운동
+        <input type="checkbox" value="낚시" name="hobby">낚시
+        <br>
+        <h3>글자색을 선택하세요</h3>
+        <input type="radio" name="tcolor" value="black" checked>검정
+        <input type="radio" name="tcolor" value="red">빨강
+        <input type="radio" name="tcolor" value="magenta">분홍
+        <input type="radio" name="tcolor" value="orange">오렌지
+        <br>
+        운전면허:<input type="checkbox" id="lic" value="yes">있음
+        <br><br>
+        <button id="btn" type="button">결과 출력하기</button>
+    </form>
+    <h3>결과값 출력되는곳</h3>
+    <div id="out" style="color: black; font-size: 15pt;">
+
+    </div>
+</body>
+</html>
