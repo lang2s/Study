@@ -1,0 +1,42 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringApp",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.StringApp",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Number",
+            "request": "launch",
+            "mainClass": "StudyForJava.Number",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DataType",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.DataType",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<Study_761dfe49>",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.HelloWorld",
+            "projectName": "Study_761dfe49"
+        }
+    ]
+}
