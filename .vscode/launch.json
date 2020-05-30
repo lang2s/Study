@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Casting",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.Casting",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Letter",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.Letter",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Variable",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.Variable",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringOperation",
+            "request": "launch",
+            "mainClass": "StudyForJava.helloworld.StringOperation",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StringApp",
             "request": "launch",
             "mainClass": "StudyForJava.helloworld.StringApp",
