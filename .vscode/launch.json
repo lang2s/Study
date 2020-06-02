@@ -6,6 +6,139 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Ex8ForFor",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex8ForFor",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex7Munje_for_while",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex7Munje_for_while",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex6Munje",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex6Munje",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex5Munje",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex5Munje",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex4For",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex4For",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex3WhileContinue",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex3WhileContinue",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2While",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex2While",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex1While",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex1While",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex12If",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex12If",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex10If",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex10If",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex9Switch",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex9Switch",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex8Switch",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex8Switch",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex7Munje",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex7Munje",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex6Scanner",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex6Scanner",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex5Scanner",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex5Scanner",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex4Operator",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex4Operator",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex3Operator",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex3Operator",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2Operator",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex2Operator",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex1",
+            "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0903.Ex1",
+            "projectName": "Study_761dfe49"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ex6Munje",
             "request": "launch",
             "mainClass": "StudyForJava.front0808.day0902.Ex6Munje",
