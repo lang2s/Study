@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial14;
+package tutorial14;
 
 public class PlayerMain extends AbstractPlayer {
 

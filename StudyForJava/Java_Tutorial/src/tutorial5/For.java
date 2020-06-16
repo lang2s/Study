@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial5;
+package tutorial5;
 
 public class For {
 

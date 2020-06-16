@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial17;
+package tutorial17;
 
 public class Peach extends Fruit{
 

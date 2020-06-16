@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial10;
+package tutorial10;
 
 import java.util.Scanner;
 

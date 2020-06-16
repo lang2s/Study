@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial6;
+package tutorial6;
 
 import java.io.File;
 import java.io.FileNotFoundException;

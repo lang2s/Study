@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial16;
+package tutorial16;
 
 public interface Dog {
 

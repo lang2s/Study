@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial13;
+package tutorial13;
 
 public class Teacher extends Person{
 	

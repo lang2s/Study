@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial19;
+package tutorial19;
 
 public class Mage extends Hero{
 

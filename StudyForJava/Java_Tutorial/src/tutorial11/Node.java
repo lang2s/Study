@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial11;
+package tutorial11;
 
 public class Node {
 

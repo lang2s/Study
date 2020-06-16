@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial8;
+package tutorial8;
 
 public class Function {
 

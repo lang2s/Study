@@ -8,6 +8,12 @@
             "type": "java",
             "name": "CodeLens (Launch) - Ex8ForFor",
             "request": "launch",
+            "mainClass": "StudyForJava.front0808.day0904.Ex8ForFor"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex8ForFor",
+            "request": "launch",
             "mainClass": "StudyForJava.front0808.day0904.Ex8ForFor",
             "projectName": "Study_761dfe49"
         },

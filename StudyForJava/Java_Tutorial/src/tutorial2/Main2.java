@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial2;
+package tutorial2;
 
 public class Main2 {
 

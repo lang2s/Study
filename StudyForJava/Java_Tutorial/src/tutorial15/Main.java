@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial15;
+package tutorial15;
 
 public class Main extends Parent{
 	

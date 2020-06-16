@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial15;
+package tutorial15;
 
 // final class Parent { final 있으면 상속안됨
 public class Parent {

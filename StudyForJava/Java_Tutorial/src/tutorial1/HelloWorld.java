@@ -1,4 +1,4 @@
-package StudyForJava.Java_Tutorial.src.tutorial1;
+package tutorial1;
 
 public class HelloWorld {
 
