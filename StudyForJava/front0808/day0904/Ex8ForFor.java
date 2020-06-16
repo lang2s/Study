@@ -25,7 +25,7 @@ public class Ex8ForFor {
                         if(j==3)
                             break; // 가장 가까운 반복문을 빠져나감
                 }
-                System.out.println("---------------------")
+                System.out.println("---------------------");
         }
         System.out.println("===========================");
 
