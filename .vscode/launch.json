@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OthersOOP",
+            "request": "launch",
+            "mainClass": "OthersOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticMethod",
+            "request": "launch",
+            "mainClass": "StaticMethod"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Public",
+            "request": "launch",
+            "mainClass": "Public"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AccountingApp",
+            "request": "launch",
+            "mainClass": "AccountingApp"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OutputMethod",
+            "request": "launch",
+            "mainClass": "OutputMethod"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WhyMethod",
+            "request": "launch",
+            "mainClass": "WhyMethod"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstMethod",
+            "request": "launch",
+            "mainClass": "FirstMethod"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ex8ForFor",
             "request": "launch",
             "mainClass": "StudyForJava.front0808.day0904.Ex8ForFor"
